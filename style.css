@@ -24,6 +24,7 @@ a {
 .main-container {
     width: 80%;
     margin: 0 auto;
+    position: relative;
 }
 
 .column {
@@ -178,32 +179,33 @@ header {
 }
 
 .product img {
-    max-width: 50%;
+    width: 50%;
 }
 
 .imgcontainer {
     width: 100%;
 }
 
+#third .main-container {
+    padding-top: 80px;
+}
+
 .allscreendisplayed {
-    position: absolute;
+    position: relative;
     left: 0;
-    background-color: white;
     display: block;
     z-index: 1;
+    height: 500px;
+    background-image: url("https://helbiz.com/asset/pages/newhome/images/HelbizBanner.jpg");
+    background-size: cover;
+    width: 100vw;
+    margin-left: -13.9%;
 }
 
 .allscreendisplayed img {
     width: 98.9vw;
 }
 
-#divwithcomingoutiphone {
-    height: 400px;
-    max-width: 100%;
-    margin: auto;
-    z-index: 3;
-    position: relative;
-}
 
 
 #divwithcomingoutiphone img {
@@ -212,6 +214,7 @@ header {
     top: 100%;
     left: 50%;
     transform: translate(-50%,-50%);
+    z-index: 3;
 }
 
 .half .column img {
@@ -220,11 +223,16 @@ header {
 #howdoes {
     text-align: left;
     height: auto;
+    width: 50%;
 }
 
 #howdoes h1 {
     padding: 100px 140px 100px 100px;
     font-size: 200%;
+}
+
+#step {
+    float: right;
 }
 
 #step h2 {
@@ -268,7 +276,7 @@ header {
     color: white;
 }
 
-#fourthleftbar {
+#fourthleftbar .product {
     background-color: #394A5B;
     margin-top: 0;
     float: left;
@@ -277,20 +285,28 @@ header {
 
 #fourthleftbar img {
     display: inline-block;
-    margin-bottom: 0;
-    padding: 126px 0 0 0;
-    width: 150%;
+    width: 85%;
 }
 
 #fourthrightbar {
-    height: 550px;
-    padding: 0;
+    height: 494px;
     float: right;
 }
 
 #halfwithbackground {
-    background-image: url(https://helbiz.com/asset/pages/newhome/images/Cities-1500.jpg);
+    background-image: url("https://helbiz.com/asset/pages/newhome/images/Cities-1500.jpg");
     background-size: cover;
+}
+
+#instagram {
+    padding: 30px 0;
+}
+
+#instagram-contained {
+    background-image: url("https://helbiz.com/asset/pages/newhome/images/Social-Banner.jpg");
+    background-position: cover;
+    height: 500px;
+    position: relative;
 }
 
 #instagram img {
@@ -300,12 +316,21 @@ header {
 #blockoverinstagramimage {
     width: 450px;
     height: 200px;
-    background-color: blue;
+    background-color: white;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%);
     text-align: center;
+}
+
+#blockoverinstagramimage h1 {
+    font-size: 175%;
+    padding: 60px 0 10px 0;
+}
+
+#blockoverinstagramimage i {
+    margin: 0 8px 0;
 }
 
 .new {
@@ -318,38 +343,53 @@ header {
     display: inline-block;
 }
 
-.footerblock1 {
-    padding-top: 60px;
+.footer-container {
+    width: 90%;
+    margin: auto;
+}
+
+.footerblock {
     width: 25%;
-    height: 600px;
-    background-color: yellow;
+    background-color: lightgrey;
     float: left;
 }
 
-.footerblock1 p {
-    padding-top: 90px;
+.footerblock.upper {
+    padding: 110px 0 100px;
 }
 
-.footerblock2 {
-    width: 25%;
-    height: 600px;
-    background-color: green;
-    float: left;
-}
-.footerblock3 {
-    width: 25%;
-    height: 600px;
-    background-color: red;
-    float: left;
-}
-.footerblock4 {
-    width: 25%;
-    height: 600px;
-    background-color: blue;
-    float: left;
+.bordered {
+    border-top: 5px solid black;
 }
 
-.end {
-    padding: 35px 0 200px 0;
+.footerblock.middle {
+    padding: 30px 0 30px;
+}
+
+.footerblock.lower {
+    padding: 40px 30px 200px;
     text-align: center;
+}
+
+.footerblock ul {
+    list-style: none;
+    color: white;
+}
+
+.footerblock p {
+    font-size: 120%;
+    padding-bottom: 10px;
+}
+
+.lower-container {
+    width: 100%;
+    background-color: green;
+    height: 300px;
+}
+
+footer .lower {
+    padding: 40px 0 250px;
+    text-align: center;
+    display: inline-block;
+    width: 100%;
 }
