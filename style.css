@@ -9,6 +9,14 @@ a {
     text-decoration: none;
 }
 
+a:hover {
+    text-decoration: underline;
+}
+
+span:hover {
+    text-decoration: none;
+}
+
 .container {
     width: 1110px;
     margin: 0 auto;
@@ -30,10 +38,6 @@ a {
 .column {
     float: left;
     padding: 0 15px;
-    border: 1px solid black;
-}
-
-.column {
 }
 
 .half.column  {
@@ -161,9 +165,12 @@ header {
 }
 
 .product {
-    background-color: lightgrey;
     padding: 0;
     height: 100%;
+}
+
+#second .product {
+    background-color: #FAFAFA;
 }
 
 .half {
@@ -175,11 +182,16 @@ header {
 }
 
 .half img {
-    display: inline-block;
+    display: block;
+    margin: auto;
 }
 
 .product img {
     width: 50%;
+}
+
+#second .product img {
+    width: 35%;
 }
 
 .imgcontainer {
@@ -215,9 +227,6 @@ header {
     left: 50%;
     transform: translate(-50%,-50%);
     z-index: 3;
-}
-
-.half .column img {
 }
 
 #howdoes {
@@ -265,6 +274,20 @@ header {
     transform: translate(-50%,-50%);
 }
 
+#fourth .with:not(:first-child) {
+    display: inline;
+    margin-left: 30px;
+}
+
+#fourth .with::after {
+    content: '>';
+    margin-left: 12px;
+    text-decoration: none;
+    color: white;
+    display: inline;
+    font-size: 130%;
+}
+
 .fourthp {
     padding: 10px;
     font-size: 111%;
@@ -284,12 +307,13 @@ header {
 }
 
 #fourthleftbar img {
-    display: inline-block;
+    display: block;
     width: 85%;
+    margin: auto;
 }
 
 #fourthrightbar {
-    height: 494px;
+    height: 544px;
     float: right;
 }
 
@@ -329,8 +353,9 @@ header {
     padding: 60px 0 10px 0;
 }
 
-#blockoverinstagramimage i {
+#blockoverinstagramimage a {
     margin: 0 8px 0;
+    color: black;
 }
 
 .new {
@@ -343,6 +368,16 @@ header {
     display: inline-block;
 }
 
+footer {
+    background-color: black;
+    height: 700px;
+    margin-bottom: 0;
+    font-size: 90%;
+}
+
+footer:hover {
+}
+
 .footer-container {
     width: 90%;
     margin: auto;
@@ -350,7 +385,6 @@ header {
 
 .footerblock {
     width: 25%;
-    background-color: lightgrey;
     float: left;
 }
 
@@ -359,15 +393,37 @@ header {
 }
 
 .bordered {
-    border-top: 5px solid black;
+    border-top: 1px solid #848080;
 }
 
 .footerblock.middle {
     padding: 30px 0 30px;
+    color: white;
+}
+
+footer li {
+    margin: 8px 0;
+}
+
+footer .upper a {
+    color: #848080;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+footer i {
+    font-size: 140%;
+    margin: 8px;
+}
+
+footer .middle a {
+    color: white;
 }
 
 .footerblock.lower {
-    padding: 40px 30px 200px;
+    padding: 40px 30px 0px;
     text-align: center;
 }
 
@@ -383,13 +439,17 @@ header {
 
 .lower-container {
     width: 100%;
-    background-color: green;
-    height: 300px;
 }
 
 footer .lower {
-    padding: 40px 0 250px;
+    padding: 40px 0 80px;
     text-align: center;
     display: inline-block;
     width: 100%;
+}
+
+footer .lower img {
+    width: 10%;
+    border: 1px solid white;
+    border-radius: 5px;
 }
